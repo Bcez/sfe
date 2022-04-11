@@ -33,8 +33,7 @@
           ctx.beginPath();
           ctx.strokeStyle = color;
           ctx.lineWidth = width_of_line;
-          ctx.moveTo(last_position_of_x, last_position_of_y);
-          ctx.lineTo(current_position_of_mouse_x,current_position_of_mouse_y);
+          ctx.arc(current_position_of_mouse_x, current_position_of_mouse_y,30,0,2*Math.PI);
           ctx.stroke();
       }
 
